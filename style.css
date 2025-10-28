@@ -256,6 +256,39 @@
       font-size: 1.1rem;
     }
 
+    /* Assistencia Tecnica Section */
+    .assistencia-tecnica {
+      padding: 6rem 2rem;
+      background-color: var(--white);
+    }
+
+    .assistencia-tecnica-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .assistencia-tecnica-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--black);
+    }
+
+    .assistencia-tecnica-text p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+
+    .assistencia-tecnica-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
     /* Store Section */
     .store {
       padding: 6rem 2rem;
@@ -465,7 +498,7 @@
 
     /* Responsive */
     @media (max-width: 992px) {
-      .store-container {
+      .store-container, .assistencia-tecnica-container {
         grid-template-columns: 1fr;
         text-align: center;
       }
