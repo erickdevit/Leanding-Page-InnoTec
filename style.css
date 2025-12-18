@@ -426,6 +426,65 @@
       transform: scale(1.05);
     }
 
+    /* Contato Simples Section */
+    .contato-simples {
+      padding: 6rem 2rem;
+      background-color: var(--white);
+    }
+
+    .contato-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .contato-container h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--black);
+    }
+
+    .contato-container > p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 3rem;
+    }
+
+    .contato-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .contato-item {
+      padding: 1.5rem;
+      background: var(--light-gray);
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .contato-item i {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .contato-item p {
+      font-size: 0.95rem;
+      color: var(--black);
+    }
+
+    .contato-item a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contato-item a:hover {
+      text-decoration: underline;
+    }
+
     /* Location Section */
     .location {
       padding: 6rem 2rem;
@@ -627,6 +686,10 @@
 
       .produtos-grid {
         grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contato-info {
+        grid-template-columns: 1fr;
       }
     }
 
