@@ -1,0 +1,24 @@
+# Documentação interna
+innotec_docs/
+
+# Node modules (se necessário)
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Variáveis de ambiente
+.env
+.env.local
