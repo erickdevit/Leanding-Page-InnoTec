@@ -332,6 +332,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
       margin-bottom: 3rem;
+      auto-rows: 1fr;
     }
 
     .produto-card {
@@ -343,6 +344,9 @@
       opacity: 0;
       transform: translateY(30px);
       transition: all 0.3s;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
 
     .produto-card:hover {
@@ -353,9 +357,12 @@
     .produto-img {
       width: 100%;
       height: 250px;
+      aspect-ratio: 1 / 1.3;
       object-fit: cover;
+      object-position: center;
       border-radius: 8px;
       margin-bottom: 1.5rem;
+      display: block;
     }
 
     .produto-icon {
