@@ -707,6 +707,24 @@
         display: none;
       }
 
+      /* Center logo and adjust header layout on mobile */
+      .header-container {
+        justify-content: center;
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 0 1rem;
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo img {
+        height: 46px;
+      }
+
       .hero h1 {
         font-size: 2.3rem;
       }
@@ -715,6 +733,7 @@
         font-size: 1.1rem;
       }
 
+      /* keep contact-info hidden to prioritize logo on small screens */
       .contact-info {
         display: none;
       }
