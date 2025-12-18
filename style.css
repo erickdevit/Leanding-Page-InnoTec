@@ -289,6 +289,97 @@
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
 
+    /* Produtos Section */
+    .produtos {
+      padding: 6rem 2rem;
+      background-color: var(--light-gray);
+    }
+
+    .produtos-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .produtos-container h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--black);
+    }
+
+    .produtos-intro {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 3rem;
+    }
+
+    .produtos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .produto-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.3s;
+    }
+
+    .produto-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .produto-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 1.5rem;
+      background-color: #e3f2fd;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .produto-icon i {
+      font-size: 1.8rem;
+      color: var(--primary);
+    }
+
+    .produto-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+      color: var(--black);
+      font-weight: 600;
+    }
+
+    .produto-card p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .produtos-cta {
+      text-align: center;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .produtos-cta p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      color: var(--black);
+      font-weight: 500;
+    }
+
     /* Store Section */
     .store {
       padding: 6rem 2rem;
@@ -533,6 +624,10 @@
       .footer-container {
         grid-template-columns: 1fr;
       }
+
+      .produtos-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     @media (max-width: 768px) {
@@ -557,6 +652,10 @@
       }
 
       .diferenciais-container {
+        grid-template-columns: 1fr;
+      }
+
+      .produtos-grid {
         grid-template-columns: 1fr;
       }
     }

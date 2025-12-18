@@ -32,3 +32,14 @@
         delay: i * 0.2
       });
     });
+
+    gsap.utils.toArray(".produto-card").forEach((card, i) => {
+      gsap.to(card, {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: { trigger: card, start: "top 80%", toggleActions: "play none none reverse" },
+        delay: i * 0.15
+      });
+    });
